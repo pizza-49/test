@@ -26,7 +26,7 @@ RANDOM_UUID="$(cat /proc/sys/kernel/random/uuid)"
 METHOD=""
 NSAPP="homeassistant-os"
 var_os="homeassistant"
-DISK_SIZE="16G"
+DISK_SIZE="32G"
 
 for version in "${VERSIONS[@]}"; do
   eval "$version=$(curl -fsSL https://raw.githubusercontent.com/home-assistant/version/master/stable.json | grep '"ova"' | cut -d '"' -f 4)"
